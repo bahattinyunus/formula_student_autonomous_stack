@@ -1,0 +1,26 @@
+name: Hata Bildirimi (Bug Report)
+description: Tespit ettiğiniz hataları bildirin.
+labels: [bug]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Hata Açıklaması
+      description: Hatanın ne olduğunu detaylıca açıklayın.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Yeniden Oluşturma Adımları
+      description: Hatayı nasıl gözlemleyebiliriz?
+      placeholder: |
+        1. ros2 launch ...
+        2. ...
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Ortam Bilgileri
+      placeholder: ROS2 Humble, Ubuntu 22.04, vb.
